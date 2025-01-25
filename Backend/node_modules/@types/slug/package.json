@@ -1,0 +1,25 @@
+{
+    "name": "@types/slug",
+    "version": "5.0.9",
+    "description": "TypeScript definitions for slug",
+    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/slug",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Daniel Clausmeyer",
+            "githubUsername": "danielclausmeyer",
+            "url": "https://github.com/danielclausmeyer"
+        }
+    ],
+    "main": "",
+    "types": "index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/slug"
+    },
+    "scripts": {},
+    "dependencies": {},
+    "typesPublisherContentHash": "100350b27f829136a733356eb9a9c764f005adefc275c32de84535d142cdf100",
+    "typeScriptVersion": "4.8"
+}
