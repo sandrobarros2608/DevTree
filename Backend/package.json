@@ -12,6 +12,7 @@
   "author": "Sandro Barros",
   "license": "ISC",
   "dependencies": {
+    "@mongodb-js/saslprep": "^1.1.9",
     "bcrypt": "^5.1.1",
     "cloudinary": "^2.5.1",
     "colors": "^1.4.0",

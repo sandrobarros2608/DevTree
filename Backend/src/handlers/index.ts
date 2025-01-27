@@ -2,10 +2,10 @@ import { Request, Response } from 'express'
 import slug from 'slug'
 import User from "../models/User";
 import { checkPassword, hashPassword } from '../utils/auth';
+import { v4 as uuid } from 'uuid'
 import { generateJWT } from '../utils/jwt';
 import cloudinary from '../config/cloudinary';
 import formidable from 'formidable'
-import { v4 as uuid } from 'uuid'
 
 export const createAccount = async (req: Request, res: Response) => {
     console.log(req.body);
