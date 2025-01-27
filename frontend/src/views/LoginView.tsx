@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import ErrorMessage from "../components/ErrorMessage";
 import { LoginForm } from "../types";
@@ -7,6 +7,8 @@ import { toast } from "sonner";
 import { isAxiosError } from "axios";
 
 export default function LoginView() {
+
+    const navigate = useNavigate();
 
     const initialValues: LoginForm = {
         email: '',
@@ -20,6 +22,7 @@ export default function LoginView() {
             const { data } = await api.post('/auth/login', formData);
             localStorage.setItem('AUTH_TOKEN', data);
             toast.success('Autenticando...');
+            navigate('/admin');
             reset();
         } catch (error) {
             if (isAxiosError(error) && error.response) {
