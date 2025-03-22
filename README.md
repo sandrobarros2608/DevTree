@@ -27,22 +27,22 @@ Aplicación web diseñada para centralizar todos tus enlaces de redes sociales e
 
 1. Clona el repositorio:  
 
-   bash
+    ```bash
    git clone https://github.com/tu-usuario/tu-repositorio.git
    cd tu-repositorio
 
 2. Instala las dependencias necesarias:
-   bash
+    ```bash
    npm install
 
 3. Configura las variables de entorno en un archivo .env para conectar con tu base de datos y servicios externos.
 
 4. Ejecuta la aplicación en Backend:
-   bash
+    ```bash
    npm run dev:api
 
 5. Ejecuta la aplicación en Frontend:
-   bash
+    ```bash
    npm run dev
 ---
 
